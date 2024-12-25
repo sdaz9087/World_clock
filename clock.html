@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
+    <title>World Clock</title>
+    <style>
+        body {
+            background: url(../download.gif);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            background-size: cover;
+            /* تصویر پس‌زمینه را کامل پوشش می‌دهد */
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .glass-background {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        select {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .city {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px dashed rgba(207, 207, 207, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .date {
+            opacity: 0.7;
+        }
+
+        .time {
+            font-size: 40px;
+            font-weight: 550;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 13px;
+            opacity: 0.7;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container glass-background">
+        <h1>World Clock</h1>
+        <select name="#" id="city">
+            <option value="">Select a city</option>
+            <option value="current">My current location</option>
+            <option value="Europe/Paris">Paris 🇫🇷</option>
+            <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
+            <option value="Asia/Tehran">Tehran 🇮🇷</option>
+            <option value="Europe/Dublin">Ireland 🇮🇪</option>
+        </select>
+        <div id="cities">
+            <div class="city" id="Tehran">
+                <div>
+                    <h2>Tehran 🇮🇷</h2>
+                    <div class="date"></div>
+                </div>
+                <div class="time"></div>
+            </div>
+            <div class="city" id="toronto">
+                <div>
+                    <h2>Toronto 🇨🇦</h2>
+                    <div class="date"></div>
+                </div>
+                <div class="time"></div>
+            </div>
+            <div class="city" id="Ireland">
+                <div>
+                    <h2>Ireland 🇮🇪</h2>
+                    <div class="date"></div>
+                </div>
+                <div class="time"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        This project was coded by <strong>Sandra Domeikiene</strong> & is
+        <a href="https://github.com/sanddot/world-clock-search-by-city" target="_blank">open sourced on GitHub.</a>
+    </footer>
+    <script src="function updateTime() {.js"></script>
+</body>
+
+</html>
