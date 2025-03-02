@@ -2,7 +2,7 @@ body {
   background: url(https://github.com/sdaz9087/World_clock/blob/main/preview.jpg);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-size: cover; /* تصویر پس‌زمینه را کامل پوشش می‌دهد */
+  background-size: cover; 
   background-repeat: no-repeat;
 }
 
@@ -15,13 +15,13 @@ body {
 }
 
 .glass-background {
-  backdrop-filter: blur(10px); /* ایجاد تاری */
-  -webkit-backdrop-filter: blur(10px); /* پشتیبانی از مرورگرهای Webkit */
-  background: rgba(255, 255, 255, 0.2); /* رنگ شفاف */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* خط مرزی شفاف */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* سایه */
-  border-radius: 15px; /* گوشه‌های گرد */
-  padding: 20px; /* فاصله داخلی */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2); 
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  border-radius: 15px; 
+  padding: 20px;
   text-align: center;
 }
 
